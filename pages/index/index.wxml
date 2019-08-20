@@ -1,0 +1,229 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="custom" style="padding-top: 56rpx;background-color:{{setNav}}">
+    <icon class="iconfont icon-fanhui"></icon>
+    <text>智能生态家居馆</text>
+  </view>
+  <scroll-view scroll-y="true" bindscroll="scroll" style="height: 1334rpx;">
+    <view class='home'>
+      <!-- 轮播图开始 -->
+      <view class="homeCon"> 
+        <image class="home_bg" src="../../image/bg.jpg"></image>
+        <view class="left"></view>
+        <view class="home_list">
+          <swiper  indicator-dots="true" 
+            autoplay="true" interval="2000" circular="true" duration="1000">
+            <block wx:for="{{imgUrl}}" wx:key="{{index}}">
+              <swiper-item> 
+                <icon class="iconfont icon-icon"></icon>
+                <image src="{{item.src}}" class="slide-image"/> 
+                <icon class="iconfont icon-icon"></icon>
+              </swiper-item>
+            </block> 
+          </swiper>
+        </view>
+        <view class="right"></view>
+      </view>
+      <!-- 轮播图结束 -->
+      <!-- 拼团开始 -->
+      <view class="assemble_bg">
+        <image src='../../image/bg_11.png'></image>
+      </view>
+      <view class='assemble'>
+        <view class='content'>
+          <image src='../../image/bg1.jpg'></image>
+          <!-- 拼团内容开始 -->
+          <view class='assembleCon'>
+            <view class='text1'>双面头颈椎设计呵护</view>
+            <view class='text1'>泰国乳胶枕芯</view>
+            <view class='price'>
+              <text class='num'>￥</text><text class='newPrice'>150</text>
+              <view class='oldPrice'><view class='line'></view>￥120</view>
+            </view>
+            <view class='buying'>
+              <text>限时抢购</text>
+            </view>
+          </view>
+          <!-- 拼团内容结束 -->
+        </view>
+        <!-- 拼团头像开始 -->
+        <view class='avatar'>
+          <view class='avatar_item'></view>
+          <view class='avatar_item'></view>
+          <view class='avatar_item'></view>
+          <view class='avatar_item'></view>
+          <view class='avatar_item'></view>
+        </view>
+        <!-- 拼团头像结束 -->
+        <!-- 倒计时开始 -->
+        <view class='countdown'>
+          <view class='timeText'style="font-size:24rpx;text-align:center;">仅剩<text>3</text>人，快呼唤小伙伴来参加吧</view>
+          <view class="timeBox">
+            <view class="timeBox_center">
+              <text>剩余</text>
+              <view>23</view>
+              <text>:</text>
+              <view>23</view>
+              <text>:</text>
+              <view>23</view>
+              <text>结束</text>
+            </view>
+          </view>
+        </view>
+        <!-- 倒计时结束 -->
+        <!-- 内容开始 -->
+        <view class='body'>
+          <image src='../../image/logo1.gif' class='bodyImg'></image>
+          <view class='bodyTitle'>玩趣加购 分享有礼</view>
+          <view class='bodyText'>先领券 再购买</view>
+          <!-- 领券开始 -->
+          <view class='coupon'>
+            <image src='../../image/quan4.gif'></image>
+            <image src='../../image/quan4.gif'></image>
+            <image src='../../image/quan4.gif'></image>
+            <image src='../../image/quan4.gif'></image>
+          </view>
+          <!-- 领券结束 -->
+          <!-- 镇店之宝开始 -->
+          <view class='jewel' style="background:url('../../image/bg_11.png')">
+            <image src='../../image/logo3.gif'></image>
+          </view>
+          <view class='common'>
+            <image src='../../image/logo1.gif'></image>
+            <view>泰国平面波浪枕</view>
+          </view>
+          <!-- 第一个主推产品开始 -->
+          <view class='bodyContent'>
+            <image class='bgImage' src='../../image/pillow_1.gif'></image>
+            <view class='con'>
+              <image src='../../image/logo2.gif' class='iconImg'></image><text>￥</text><text class='price'>228.00</text>
+              <view class='button'>
+                <text>立即购买</text>
+                <icon class='iconfont icon-youjiantou'></icon>
+              </view>
+            </view>
+          </view>
+          <!-- 第一个主推产品结束 -->
+          <view class='city'>
+            <image src='../../image/bg_1.gif'></image>
+          </view>
+          <!-- 第二个主推产品开始 -->
+          <view class='body2'>
+            <image src='../../image/pillow_2.gif' class='img1'></image>
+            <view class='bodyCon2'>
+              <image src='../../image/pillow_3.gif' class='img2'></image>
+              <view class='bodyPrice'><text>￥</text><text class='price'>228.00</text></view>
+              <view class='button'>
+                <text>立即购买</text>
+                <icon class='iconfont icon-youjiantou'></icon>
+              </view>
+            </view>
+          </view>
+          <!-- 第二个主推产品结束 -->
+          <!-- 第三个主推产品开始 -->
+          <view class='body3'>
+            <view class='common'>
+              <image src='../../image/logo1.gif'></image>
+              <view>泰国平面波浪枕</view>
+            </view>
+            <view class='person'>
+              <image src='../../image/pillow_4.gif'></image>
+            </view>
+            <view class='commodity'>
+              <view class='center1' wx:for="{{recommend}}">
+                <text class='title'>{{item.shop_name}}</text>
+                <image src='{{item.shop_logo1}}' class='img3'></image>
+                <view class='bottom'>
+                  <image src='../../image/logo2.gif' class='iconimg'></image>
+                  <text>￥</text><text class="price">{{item.shop_price}}</text>
+                  <view class='button'>
+                    <text>立即购买</text>
+                    <icon class='iconfont icon-youjiantou'></icon>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <!-- 第三个主推产品结束 -->
+          <!-- 第四个主推产品开始 -->
+          <view class='body4'>
+            <view class='jewel' style="background:url('../../image/bg_11.png')">
+              <image src='../../image/logo3.gif'></image>
+            </view>
+            <view class='common'>
+              <image src='../../image/logo1.gif'></image>
+              <view>泰国平面波浪枕</view>
+            </view>
+            <view class='commodity'>
+              <view class='center1' wx:for="{{recommend}}">
+                <text class='title'>{{item.shop_name}}</text>
+                <image src='{{item.shop_logo1}}' class='img3'></image>
+                <view class='bottom'>
+                  <image src='../../image/logo2.gif' class='iconimg'></image>
+                  <text>￥</text><text class="price">{{item.shop_price}}</text>
+                  <view class='button'>
+                    <text>立即购买</text>
+                    <icon class='iconfont icon-youjiantou'></icon>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <!-- 第四个主推产品结束 -->
+          <view class='girl'>
+            <image src='../../image/pillow_5.gif'></image>
+          </view>
+          <!-- 排行榜开始 -->
+          <view class="row">
+            <view class='header'>
+              <text class='ranking'>排行榜</text>
+              <view class='volume'>
+                <text class='active'>销量排行</text>
+              </view>
+            </view>
+            <view class="loading">
+              <van-loading type="spinner" color="#c9c9c9" size='80rpx' wx:if="{{loading}}"/>
+            </view>
+            <view class='body4'>
+              <view class='center' wx:for="{{ranking}}">
+                <image src='{{item.goods_thumb}}' bindtap='goDetail' data-id="{{item.goods_id}}"/>
+                <view class='circle'>
+                  <text>{{index+1}}</text>
+                </view>
+                <view class='text'>
+                  <text>{{item.goods_name}}</text>
+                  <text class='person1'>199人付款</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <!-- 排行榜结束 -->
+          <!-- 猜你喜欢开始 -->
+          <view class='like'>
+            <view class='title'>猜你喜欢</view>
+            <view class="loading">
+              <van-loading type="spinner" color="#c9c9c9" size='80rpx' wx:if="{{loading}}"/>
+            </view>
+            <view class="new_list"> 
+              <view class="lis" wx:for="{{guessgoods}}" wx:key="{{index}}" bindtap='goDetail' data-id="{{item.goods_id}}">
+                <image src="{{item.goods_thumb}}"></image>
+                <view class="new_text1">{{item.goods_name}}</view>
+                <view class="new_text_2">{{item.goods_name}}</view>
+                <view class="new_text_3">￥{{item.shop_price}}</view>
+              </view>
+            </view>
+            <!-- 查看更多开始 -->
+            <view class='seeMore'>
+              <text>查看全部宝贝</text>
+            </view>
+            <!-- 查看更多结束 -->
+          </view>
+          <!-- 猜你喜欢结束 -->
+          <!-- 镇店之宝结束 -->
+        </view>
+        <!-- 内容结束 -->
+      </view>
+      <!-- 拼团结束 -->
+    </view>
+  </scroll-view>
+</view>

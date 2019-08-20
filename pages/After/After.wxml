@@ -1,0 +1,94 @@
+<!--pages/After/After.wxml-->
+<view class="after">
+  <!-- 评价 -->
+  <view class="evaluate">
+    <image></image>
+    <view class="content">
+      <view class="active">
+        <van-icon name="flower-o"/>
+        <text>好评</text>
+      </view>
+      <view>
+        <van-icon name="flower-o" />
+        <text>中评</text>
+      </view>
+      <view>
+        <van-icon name="flower-o" />
+        <text>差评</text>
+      </view>
+    </view>
+  </view>
+  <!-- 评价内容 -->
+  <view class="eva-content">
+    <view class="content_top">
+      <textarea placeholder="宝贝满足你的期待吗？说说你的使用心得，分享给想买他们吧"></textarea>
+      <view class="add">
+        <van-icon name="photo-o"/>
+        <text>添加照片</text>
+      </view>
+    </view>
+    <view class="content_bottom">
+      <view>
+        <van-checkbox
+        value="{{ checked }}"
+        checked-color="#dc3025"
+        bind:change="onChange"
+        >
+        </van-checkbox>
+        <text>匿名</text>
+      </view>
+      <text>你的评价能帮助其他小伙伴呦</text>
+    </view>
+  </view>
+  <!-- 提交评价 -->
+  <view class="refer">
+    <view class="refer_top">
+      <view class="shop">
+        <van-icon name="shop-o" class="icon"/>
+        <text>店铺评分</text>
+      </view>
+      <view class="refer_con">
+        <view class="con1">
+          <text>描述相符</text>
+          <van-rate
+            value="{{ value }}"
+            size="{{ 25 }}"
+            color="#dc3025"
+            void-color="#eee"
+            void-icon="star"
+            bind:change="onChange"
+            class="star"
+          />
+          <text>非常好</text>
+        </view>
+        <view class="con1">
+          <text>物流服务</text>
+          <van-rate
+            value="{{ value }}"
+            size="{{ 25 }}"
+            color="#dc3025"
+            void-color="#eee"
+            void-icon="star"
+            bind:change="onChange"
+            class="star"
+          />
+          <text>非常好</text>
+        </view>
+        <view class="con1">
+          <text>服务态度</text>
+          <van-rate
+            value="{{ value }}"
+            size="{{ 25 }}"
+            color="#dc3025"
+            void-color="#eee"
+            void-icon="star"
+            bind:change="onChange"
+            class="star"
+          />
+          <text>非常好</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <van-button size="large" type="danger" bindtap="submit">提交评价</van-button>
+</view>

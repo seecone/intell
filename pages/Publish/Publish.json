@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-icon": "../../miniprogram_npm/vant-weapp/icon/index",
+    "van-checkbox": "../../miniprogram_npm/vant-weapp/checkbox/index",
+    "van-checkbox-group": "../../miniprogram_npm/vant-weapp/checkbox-group/index",
+    "van-rate": "../../miniprogram_npm/vant-weapp/rate/index",
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index"
+  }
+}

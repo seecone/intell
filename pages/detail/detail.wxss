@@ -1,0 +1,536 @@
+/* pages/detail/detail.wxss */
+
+.wrap{
+  width: 750rpx;
+  height: 1334rpx;
+  background: #eee;
+}
+/*头样式开始*/
+.top{
+  position: relative;
+  height: 710rpx;
+}
+.top image{
+  width: 100%;
+  height: 100%;
+}
+/*图标样式开始*/
+.top view{
+  position: absolute;
+  top: 20rpx;
+  width: 76rpx;
+  height: 76rpx;
+  background: #1f1f1f;
+  opacity: 0.6;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 76rpx;
+}
+.top view.arrow{
+  left: 20rpx;
+}
+.top view.cart{
+  right: 120rpx;
+}
+.top view.more{
+  right: 20rpx;
+}
+.top view icon{
+  font-size: 36rpx;
+  color: #fff;
+}
+/*图标样式结束*/
+/*头样式结束*/
+/*介绍样式开始*/
+.news{
+  box-sizing: border-box;
+  padding: 20rpx 35rpx 26rpx 26rpx;
+  background: #fff;
+}
+.news-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 684rpx;
+}
+.news-top text{
+  display: inline-block;
+  width: 554rpx;
+	height: 74rpx;
+	font-size: 30rpx;
+	line-height: 32rpx;
+	font-weight: bold;
+	color: #404040;
+}
+.news-top .share{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 44rpx;
+  height: 74rpx;
+  margin-left: 90rpx;
+  margin-top: -25rpx;
+}
+.news-top .share icon{
+  font-size: 50rpx;
+  margin-right: 16rpx;
+}
+.news-top .share text{
+  font-size: 20rpx;
+	line-height: 24rpx;
+	color: #0e0e0e;
+}
+.news-center{
+  font-size: 34rpx;
+	line-height: 20rpx;
+	color: #fa380a;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+}
+.news-center text{
+  font-size: 58rpx;
+	line-height: 20rpx;
+	color: #fa380a;
+}
+.news-bottom text{
+  font-size: 26rpx;
+	line-height: 24rpx;
+	color: #505050;
+}
+.news-bottom .saleNum{
+  margin-left: 92rpx;
+}
+/*介绍样式结束*/
+/*优惠券样式开始*/
+.coupon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 116rpx;
+  padding: 0 26rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.couponBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.couponBox view{
+  padding-top: 4rpx;
+  box-sizing: border-box;
+}
+.couponBox view icon{
+  color: #ff3000;
+  font-size: 35rpx;
+  margin-right: 20rpx;
+}
+.couponBox view text{
+  font-size: 26rpx;
+	color: #434343;
+}
+.coupon icon{
+  font-size: 40rpx;
+  color: #b1b1b1;
+}
+/*优惠券样式结束*/
+/*全场包邮样式开始*/
+.serviceBox{
+  height: 70rpx;
+  padding: 8rpx 30rpx 25rpx 50rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.serviceBox text{
+  font-size: 26rpx;
+	line-height: 28rpx;
+	font-weight: bold;
+	color: #505050;
+}
+.serviceBox icon{
+  float: right;
+  font-size: 40rpx;
+  color: #b1b1b1;
+}
+/*全场包邮样式结束*/
+/* 拼团样式开始 */
+.assemble{
+  box-sizing: border-box;
+  height: 198rpx;
+  margin: 10rpx 0;
+  padding: 31rpx 32rpx 59rpx 26rpx;
+  background: #fff;
+}
+.assemble .collageTitle{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 23rpx;
+} 
+.assemble .collageBox{
+  background: #fff;
+}
+.assemble .collageBox .collageBoxItem{
+  height: 60px;
+}
+.assemble .collageBox .scrollitem{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17rpx;
+  box-sizing: border-box;
+}
+.assemble .collageBox .scrollitem .user{
+  display: flex;
+}
+.assemble .collageBox .scrollitem .user .image{
+  width: 71rpx;
+  height: 71rpx;
+  font-size: 25rpx;
+  line-height: 71rpx;
+  background:#666;
+  border-radius:50%;
+  margin-right: 21rpx;
+}
+.assemble .collageBox .scrollitem .user .name{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25rpx;
+  margin-top: 20rpx;
+}
+.assemble .collageBox .scrollitem .settlement{
+  display: flex;
+}
+.assemble .collageBox .scrollitem .settlement .discrepancy{
+  text-align: center;
+  margin-right: 44rpx;
+}
+.assemble .collageBox .scrollitem .settlement .peopleNum{
+  font-size: 26rpx;
+  font-weight: 800;
+}
+.assemble .collageBox .scrollitem .settlement .time{
+  font-size: 18rpx;
+}
+.assemble .collageBox .scrollitem .settlement button{
+  width: 135rpx;
+  height: 59rpx;
+  font-size: 34rpx;
+  color: #fff;
+  background:#fb3609;
+  line-height: 59rpx;
+  padding: 0;
+}
+/* 拼团样式结束 */
+/* 商品评价样式开始 */
+.appraise{
+  margin-top: 18rpx;
+  background:#fff;
+}
+.appraise .appraiseTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 39rpx 33rpx 13rpx 24rpx;
+  font-size: 34rpx;
+}
+.appraise .appraiseTitle view .more1{
+  color: #b1b1b1; 
+}
+.appraise .appraiseTitle view icon{
+  font-size: 36rpx;
+  color: #b1b1b1;
+}
+.appraise .appraiseNav .nav{
+  display: inline-block;
+  height: 49rpx;
+  font-size: 14px;
+  line-height: 49rpx;
+  padding: 0 13rpx;
+  margin-top: 23rpx; 
+  margin-left: 27rpx;
+  border-radius: 25rpx;
+  background: #fcd8d1;
+  box-sizing: border-box;
+}
+.appraise .appraiseNav .nav .num{
+  font-size: 12px;  
+}
+.appraise .appraiseItem{
+  border-bottom: 17rpx solid #f2f6f5;
+  padding: 23rpx 28rpx 27rpx 23rpx;
+  box-sizing: border-box;
+}
+.appraise .appraiseItem .appraiseUser{
+  display: flex;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 25rpx;
+}
+.appraise .appraiseItem .appraiseUser .image{
+  width: 56rpx;
+  height: 56rpx;
+  background:#999;
+  border-radius: 28rpx;
+  margin-right: 19rpx;
+}
+.appraise .appraiseItem .appraiseUser{
+  margin-bottom: 24rpx;
+}
+.appraise .appraiseItem .appriaseContent{
+  font-size: 30rpx;
+}
+.appraise .appraiseItem .appriaseImage{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16rpx;
+}
+.appraise .appraiseItem .appriaseImage text{
+  width: 210rpx;
+  height: 210rpx;
+  background:#999;
+  text-align:center;
+  line-height: 210rpx;
+}
+/* 商品评价样式结束 */
+/* 商品详情样式开始 */
+.goodsDetail{
+  background: #fff;
+}
+.goodsDetail .detailTitle{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-indent: 19rpx;
+  font-size: 34rpx; 
+}
+.goodsDetail .detailGoods{
+  display: flex;
+  justify-content: space-around;
+  flex-flow:row wrap;
+  width: 100%;
+  padding: 0 14rpx;
+  box-sizing: border-box;
+  background: #eee;  
+}
+.goodsDetail .detailGoods .goods{
+  width: 230rpx;
+  height: 340rpx;
+  margin: 12rpx 0;
+  background: #fff; 
+}
+.goodsDetail .detailGoods .goods .goodsImg{
+  width: 230rpx;
+  height: 260rpx;
+  background: #ccc;
+}
+.goodsDetail .detailGoods .goods .goodsMsg view{
+  margin: 0;
+  padding: 0;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsTitle{
+  height: 42rpx;
+  line-height: 42rpx;
+  font-size: 18rpx;
+  text-align: center;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop{
+  font-size: 16rpx; 
+  text-align: center;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop .goodsPrice{
+  margin: 0 12rpx;
+  font-size: 10rpx;
+  color: #dd2700;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop .goodsPrice .num{
+  font-size: 16rpx;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop button{
+  display: inline-block;
+  width: 75rpx;
+  height: 23rpx;
+  color:#fff;
+  background:#dd2700;
+  border-radius:4px;
+  font-size: 10rpx;
+  padding: 0;
+}
+/* 商品详情样式结束 */
+.empty{
+  width: 750rpx;
+  height: 10rpx;
+  background: #eee;
+  z-index: 9999;
+}
+.person{
+  width: 100%;
+  height: 100%;
+}
+.person image{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+/*底部*/
+.footer{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:750rpx;
+  height:100rpx;
+  background: #fff;
+}
+.footer-list{
+  display: flex;
+  align-items: center;
+}
+.footer-list icon{
+  font-size: 38rpx;
+}
+.footer-list-lis{
+  display: flex;
+  flex-direction: column;
+  width:52rpx;
+  text-align: center;
+  margin-left:30rpx;
+}
+.footer-list-lis text{
+  font-size: 16rpx;
+}
+.footer-list-1{
+  width:247rpx;
+  height:100rpx;
+  background: #ffcec9;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color:#fff;
+  margin-left:20rpx;
+}
+.footer-list-2{
+  width:240rpx;
+  height:100rpx;
+  background: red;
+  color:#fff;
+  font-weight: 600;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+/*添加购物车*/
+.van-popup--bottom{
+  overflow: visible!important;
+}
+.footer-shop{
+  width:100%;
+  height:765rpx;
+  padding-left: 55rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.footer-shop .content{
+  display: flex;
+}
+.footer-shop .content image{
+  width:240rpx;
+  height: 240rpx;
+  border-radius: 10rpx;
+  box-shadow: 4rpx 0 8rpx 2rpx #ccc;
+  transform: translateY(-68rpx);
+}
+.footer-shop .content .footer-shop-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height:170rpx;
+  margin-top:15rpx;
+  margin-left: 40rpx;
+}
+.footer-shop .content .footer-shop-right text:nth-child(1){
+  font-size: 30rpx;
+  color:#d60e15;
+}
+.footer-shop .content .footer-shop-right text:nth-child(2),.footer-shop .content .footer-shop-right text:nth-child(3){
+  font-size: 30rpx;
+  color:#343434;
+  margin-top: 14rpx;
+  margin-bottom: 18rpx;
+}
+.footer-shop .content .footer-shop-right icon{
+  position: absolute;
+  top:20rpx;
+  right:20rpx;
+  font-size: 30rpx;
+}
+.footer-shop .size{
+  width: 100%;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 38rpx;
+  color:#343434;
+}
+.footer-shop .list text{
+  display: inline-block;
+  padding:10rpx 33rpx;
+  background: #dcdcdc;
+  font-size: 24rpx;
+  color:#2e2e2e; 
+  border-radius: 15rpx;
+  margin-right: 54rpx;
+}
+.footer-shop .list text.active{
+  color: #fff;
+  background: #fb3609;
+}
+.footer-shop .btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background: #fb3609;
+  color: #fff;
+  font-size: 40rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
+.number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 110rpx;
+  font-size: 38rpx;
+  color:#343434;
+  padding-right:55rpx;
+  box-sizing: border-box;
+}
+.number1 {
+  display: flex;
+  height: 100%;
+  font-size: 24rpx;
+  align-items: center;
+  text-align: center;
+}
+
+.number1 .add, .number1 .remove {
+  width: 46rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  border: 1rpx solid #e7e7e7;
+}
+
+.number1 input {
+  width: 100rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  border: 1rpx solid #e7e7e7;
+  border-left: 0;
+  border-right: 0;
+}
+/*底部*/

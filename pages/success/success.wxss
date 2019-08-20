@@ -1,0 +1,20 @@
+/* pages/success/success.wxss */
+.success{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+.success image{
+  width: 284rpx;
+  height: 170rpx;
+  padding-bottom: 50rpx;
+  box-sizing: border-box;
+}
+.success text{
+  color: #999;
+  font-size: 30rpx;
+}

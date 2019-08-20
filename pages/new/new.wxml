@@ -1,0 +1,38 @@
+<!--pages/new/new.wxml-->
+<view class="new">
+  <!-- 新品上边开始 -->
+  <view class="top">
+    <image src="../../image/bg.jpg"></image>
+    <view class="text">
+      <view class="txt1">
+        <text>RECOMMENDED</text>
+        <text>每日推荐</text>
+      </view>
+      <view class="txt2">
+        <text>每</text>
+        <text>日</text>
+        <text>推</text>
+        <text>荐</text>
+      </view>
+    </view>
+  </view>
+  <!-- 新品上边结束 -->
+  <!-- 新品内容开始 -->
+  <view class="content">
+    <view class="loading">
+      <van-loading type="spinner" color="#c9c9c9" size='80rpx' wx:if="{{loading}}"/>
+    </view>
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="icon">
+        <icon class="iconfont icon-shoucang1"></icon>
+      </view>
+      <image src="{{item.goods_thumb}}" data-id="{{item.goods_id}}" bindtap="goDetail"></image>
+      <view class="center">
+        <text class="title">{{item.goods_name}}</text>
+        <text class="name">{{item.goods_name}}</text>
+        <text class="price">￥{{item.shop_price}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 新品内容结束 -->
+</view>

@@ -1,0 +1,47 @@
+<!--pages/offer/offer.wxml-->
+<view class='wrap'>
+  <view class='top'>
+    <view class="line"></view>
+    可用红包<text>4</text>个
+  </view>
+  <view class='list'>
+    <view class='left'>
+      <text class='price'>￥<text class='num'>5</text>购物券</text>
+      <text class='collect'>收藏+关注</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='left left-one'>
+      <text class='reduce'>满199立减</text>
+      <text class='price'>￥<text class='num'>20</text>购物券</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='left left-two'>
+      <text class='reduce'>满399立减</text>
+      <text class='price'>￥<text class='num'>50</text>购物券</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='left left-three'>
+      <text class='reduce'>满799立减</text>
+      <text class='price'>￥<text class='num'>100</text>购物券</text>
+    </view>
+    <view class='right'>
+      <text>立即使用</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <text>没有更多了</text>
+    <image src='../../image/empty.gif'></image>
+  </view>
+</view>

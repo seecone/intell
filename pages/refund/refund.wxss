@@ -1,0 +1,196 @@
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+}
+/* 全部 */
+.ctrl{
+  display: flex;
+  height: 64rpx;
+  color: #333;
+  font-size: 26rpx;
+  background: #fff;
+}
+.ctrl view{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ctrl view text{
+  color: #333;
+  font-size: 26rpx;
+  padding-bottom: 30rpx;
+}
+.ctrl view .all{
+  display: inline-block;
+  width: 52rpx;
+}
+.ctrl view .wait{
+  display: inline-block;
+  width: 78rpx;
+}
+.ctrl view text.active{
+  color: #dc3025;
+  border-bottom: 4rpx solid #dc3025;
+}
+/* 全部 */
+.wrap .list{
+  display: flex;
+  flex-direction: column;
+}
+/* 订单号 */
+.wrap .list .indent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24rpx;
+  color: #8d8d8d;
+  border-top: 2rpx solid #ccc;
+  padding: 27rpx 21rpx;
+  box-sizing: border-box; 
+  background: #fff;
+}
+.wrap .list .indent text:nth-of-type(2){
+  color: #24ab63;
+}
+/* 订单号 */
+/* 商品1 */
+.wrap .list .news{
+  height: 380rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+}
+.wrap .list .news .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 205rpx;
+  padding: 17rpx 21rpx 22rpx;
+  box-sizing: border-box;
+  background: #f7f7f7;
+}
+.wrap .list .news .content image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 38rpx;
+  background: #f00;
+}
+.wrap .list .news .content .news-con{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 507rpx;
+}
+.wrap .list .news .content .news-box{
+  display: flex;
+  flex-direction: column;
+}
+.wrap .list .news .content .news-box .name{
+  font-size: 26rpx;
+	color: #383a3a;
+}
+.wrap .list .news .content .news-box .composition,.wrap .list .news .content .price-box .count{
+  font-size: 22rpx;
+	color: #bebebe;
+  padding-top: 32rpx;
+  box-sizing: border-box;
+}
+.wrap .list .news .content .price-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 130rpx;
+}
+.wrap .list .news .content .price-box .price{
+  font-size: 30rpx;
+	color: #dc3025;
+  font-weight: bold;
+}
+.wrap .list .news .content .price-box .wait{
+  color: #ff3f3f;
+  font-size: 26rpx;
+  padding-top: 17rpx;
+  box-sizing: border-box;
+}
+.wrap .list .news .total{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+	color: #8b8b8b;
+  border-bottom: 2rpx solid #eee;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.wrap .list .news .total text{
+  color: #dc3025;
+}
+.wrap .list .news .operate{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 97rpx;
+  background: #fff;
+  padding: 21rpx;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+.wrap .list .news .operate text{
+  height: 56rpx;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 26rpx;
+  border-radius: 28rpx;
+  padding: 14rpx 18rpx;
+  box-sizing: border-box;
+}
+.wrap .list .news .operate .sale{
+  color: #dc3025;
+  border: 2rpx solid #dc3025;
+  margin-right: 20rpx;
+}
+.wrap .list .news .operate .speak{
+  color: #1ca95e;
+  border: 2rpx solid #1ca95e;
+}
+/* 商品1 */
+/* 商品2 */
+.wrap .list .no{
+  width: 100%;
+  height: 362rpx;
+  background: #fff;
+}
+.wrap .list .no .operate .sale{
+  color: #aaa8a8;
+  border: 2rpx solid #aaa8a8;
+  margin-right: 20rpx;
+}
+.wrap .list .no .operate .speak{
+  color: #fff;
+  background: #dc3025;
+  border: 2rpx solid #dc3025;
+}
+/* 商品2 */
+/* 没有更多 */
+.noMore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 96rpx;
+  width: 100%;
+}
+.noMore text{
+  color: #bacdc3;
+  font-size: 30rpx;
+}
+.noMore image{
+  width: 107rpx;
+  height: 64rpx;
+  opacity: 0.3;
+}

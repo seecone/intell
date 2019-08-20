@@ -1,0 +1,128 @@
+
+.ding{
+  width:100%;
+}
+.ding .top{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height:78rpx;
+  padding:0 20rpx 0 23rpx;
+  font-size:22rpx;
+  color:#969696;
+ }
+ .ding .top text.over{
+   color:#24ab63;
+ }
+ .ding .ding-list{
+   width:100%;
+ }
+.ding .ding-list .lists .list-top{
+ display: flex;
+ box-sizing:border-box; 
+ width:100%;
+ height:205rpx;
+ background:#f7f7f7;
+ padding:22rpx; 
+}
+.ding .ding-list .lists .list-top image{
+  width:161rpx;
+  height:160rpx;
+  background:#f00;
+
+}
+.ding .ding-list .lists .list-top .listReight{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-left:38rpx;
+  flex:1;
+  height:160rpx;
+  padding:15rpx 0 26rpx 0;
+}
+.ding .ding-list .lists .list-top .listReight .txt {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+ 
+}
+.ding .ding-list .lists .list-top .listReight .txt .theme{
+  font-size:26rpx;
+	line-height:20rpx;
+	color: #383a3a;
+}
+.ding .ding-list .lists .list-top .listReight .txt .theme-bottom{
+  font-size:22rpx;
+	line-height:20rpx;
+	color:#bebebe;
+}
+.ding .ding-list .lists .list-top .listReight .pri{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.ding .ding-list .lists .list-top .listReight .pri .pris{
+   font-size:24rpx;
+	line-height:40rpx;
+	color:#dc3025;
+}
+.ding .ding-list .lists .list-top .listReight .pri .nums{
+   font-size:24rpx;
+	line-height:20rpx;
+	color:#bebebe;
+}
+.ding .ding-list .lists .list-top .listReight .pri .dai{
+  position: relative;
+  top:20rpx;
+  font-size:26rpx;
+	line-height:20rpx;
+	color: #ff3f3f;
+}
+.ding .ding-list .lists .allPrice{
+  height:78rpx;
+  line-height:78rpx;
+  text-align: right;
+  font-size:24rpx;
+	color:#8b8b8b;
+  border-bottom:1rpx solid #ddd;
+  padding-right:27rpx;
+  box-sizing: border-box;
+}
+.ding .ding-list .lists .delAndre{
+ font-size:26rpx;
+  width:100%;
+  height:96rpx;
+}
+.ding .ding-list .lists .delAndre text{
+  float:right;
+  display: inline-block;
+  width:144rpx;
+  height:55rpx;
+  text-align: center;
+  line-height:55rpx;
+  border-radius:28rpx;
+  border: 1rpx solid #aaa8a8;
+  margin-top:20rpx;
+  color: #aaa8a8;
+}
+.ding .ding-list .lists .delAndre .recommend{
+  margin:20rpx 21rpx 0 0;
+   border: 1rpx solid #1ca95e;
+   color:#1ca95e;
+}
+.ding .ding-list .lists .delAndre .del{
+  margin:20rpx 11rpx 0;
+}
+.ding .ding-list .lists .delAndre  .removeList{
+   margin:20rpx 21rpx 0 11rpx;
+   border:none;
+   color:#fff;
+   background:#f00;
+}
+.ding .ding-list .lists .tops{
+  height:30rpx;
+  background:#f2f2f2;
+}

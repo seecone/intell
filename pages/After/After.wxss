@@ -1,0 +1,153 @@
+/* pages/After/After.wxss */
+.after{
+  height: 100%;
+  background: #f2f2f2;
+}
+/* 评价开始 */
+.evaluate{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 96rpx;
+  padding: 20rpx 0 20rpx 24rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-bottom: 2px solid #f2f2f2;
+}
+.evaluate image{
+  width: 65rpx;
+  height: 69rpx;
+  margin-right: 55rpx;
+  background: #f00;
+}
+.evaluate .content{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 138rpx;
+  padding-right: 76rpx;
+  box-sizing: border-box;
+}
+.evaluate .content view{
+  font-size: 26rpx;
+}
+.evaluate .content view.active{
+  color: #dc3025;
+}
+.evaluate .content view text{
+  padding-left: 23rpx;
+  box-sizing: border-box;
+}
+/* 评价结束 */
+/* 评价内容开始 */
+.eva-content{
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+.eva-content .content_top{
+  font-size: 24rpx;
+  color: #999;
+  height: 380rpx;
+  padding: 24rpx 73rpx 45rpx 24rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.eva-content .content_top textarea{
+  height: 60%;
+}
+.eva-content .content_top .add{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 128rpx;
+  height: 128rpx;
+  border: 2rpx dashed #ccc;
+}
+.eva-content .content_top .add van-icon{
+  font-size: 50rpx; 
+}
+.eva-content .content_top .add text{
+  font-size: 20rpx;
+}
+.eva-content .content_bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88rpx;
+  color: #999;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+.eva-content .content_bottom view{
+  font-size: 26rpx;
+}
+.eva-content .content_bottom van-checkbox{
+  display: inline-block;
+  padding-right: 24rpx;
+}
+.eva-content .content_bottom text{
+  font-size: 24rpx;
+}
+/* 评价内容结束 */
+/* 提交评价开始 */
+.refer{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.refer .refer_top{
+  padding-top: 24rpx;
+  padding-left: 24rpx;
+  padding-right: 95rpx;
+  box-sizing: border-box;  
+}
+.refer .refer_top .shop{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 56rpx;
+  box-sizing: border-box;
+}
+.refer .refer_top .shop .icon{
+  color: #bebebe;
+  font-size: 36rpx;
+  margin-top: 10rpx;
+}
+.refer .refer_top .shop text{
+  font-size: 26rpx;
+  color: #333;
+  line-height: 21rpx;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.refer_con .con1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+.refer_con .con1 text{
+  font-size: 30rpx;
+  color: #333;
+}
+.refer_con .con1 .star{
+  padding-left: 19rpx;
+  padding-right: 77rpx;
+  box-sizing: border-box;
+}
+.after van-button{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 95rpx;
+  font-size: 37rpx;
+  color: #fff;
+  text-align: center;
+}
+.van-button--large{
+  height: 95rpx;
+}
+/* 提交评价结束 */

@@ -1,0 +1,683 @@
+/**index.wxss**/
+/*轮播图样式开始*/
+.home{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.homeCon{
+  width:100%;
+  height:400rpx;
+  margin-top: 45rpx;
+  margin-bottom: 103rpx;
+}
+.homeCon .home_bg{
+  width: 100%;
+  height:400rpx;
+}
+.homeCon .left{
+  position: absolute;
+  left: -68rpx;
+  top: 120rpx;
+  width: 100rpx;
+  height: 360rpx;
+  background: #bfbfbf;
+  border-radius: 40rpx;
+  z-index: 7;
+}
+.homeCon .right{
+  position: absolute;
+  right: -68rpx;
+  top: 120rpx;
+  width: 100rpx;
+  height: 360rpx;
+  background: #bfbfbf;
+  border-radius: 40rpx;
+  z-index: 7;
+}
+.homeCon .home_list{
+  position:absolute;
+  top: 120rpx;
+  left:50%;
+  width: 629rpx;
+  height: 360rpx;
+  margin-left: -314rpx;
+}
+.homeCon .home_list swiper{
+  width: 100%;
+  height: 100%;
+}
+.home_list swiper swiper-item{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.home_list swiper swiper-item icon{
+  position: absolute;
+  top: 50%;
+  font-size: 80rpx;
+  color: #fff; 
+  margin-top: -35rpx;
+}
+.home_list swiper swiper-item icon:nth-of-type(1){
+  left: 20rpx;
+  transform: rotate(180deg)
+}
+.home_list swiper swiper-item icon:nth-of-type(2){
+  right: 12rpx;
+}
+.home_list swiper swiper-item,.home_list swiper image{
+  width: 100%;
+  height: 100%;
+  border-radius:40rpx;
+}
+/*轮播图样式结束*/
+/*拼团样式开始*/
+/*拼团上背景图开始*/
+.assemble_bg{
+  margin-top:175rpx;
+}
+.assemble_bg image{
+  width:100%;
+  height:250rpx;
+  background-size:100%;
+}
+/*拼团上背景图结束*/
+/*拼团内容开始*/
+.assemble{
+  position: relative;
+  width: 100%;
+  padding-top: 90rpx;
+  box-sizing: border-box;
+}
+.assemble .content{
+  display:flex;
+  align-items: center;
+  position: absolute;
+  top: -150rpx;
+  left: 50rpx;
+  width:658rpx;
+  height:303rpx;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  background:#fff;
+  border-radius:20rpx;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, .1);  
+}
+.assemble .content image{
+  width: 40%;
+  height: 224rpx;
+}
+.assemble .content .assembleCon{
+  flex: 1;
+  height: 190rpx;
+  padding-left: 20rpx;
+}
+.assemble .content .assembleCon .text1{
+  width: 100%;
+  height: 45rpx;
+  font-size: 36rpx;
+  overflow: hidden;
+}
+.assemble .content .assembleCon .price{
+  display: flex;
+  align-items: flex-end;
+  height: 60rpx;
+}
+.assemble .content .assembleCon .price .num{
+  color: #f00;
+  font-size: 26rpx;
+}
+.assemble .content .assembleCon .price .newPrice{
+  color: #f00;
+}
+.assemble .content .assembleCon .price .oldPrice{
+  position: relative;
+  color: #ccc;
+  font-size: 26rpx;
+}
+.assemble .content .assembleCon .price .oldPrice .line{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70rpx;
+  height: 2rpx;
+  margin-top: -1rpx;
+  margin-left: -30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.assemble .content .assembleCon .buying{
+  width:115rpx;
+  color:#cf3d1e;
+  font-size:28rpx;
+  text-align:center;
+  border:1px solid #cf3d1e;
+  margin-top:20rpx;
+}
+/*拼团样式结束*/
+/*头像样式开始*/
+.assemble .avatar{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  height:68rpx;
+  padding:0 155rpx;
+  margin-top: 150rpx;
+  box-sizing: border-box;
+}
+.assemble .avatar_item{
+  width: 68rpx;
+  height: 68rpx;
+  background: -webkit-gradient(linear,left top,right bottom,from(#ff4091), to(#ff9e29));
+  border-radius: 50%;
+  margin-right: 17rpx;
+}
+.assemble .avatar_item:last-child{
+  margin-right: 0;
+}
+/*头像样式结束*/
+/*倒计时开始*/
+.assemble .countdown .timeText{
+  margin-top: 47rpx;
+  margin-bottom: 37rpx;
+}
+.timeBox{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeBox_center{
+  display:flex;
+  align-items: center;
+  font-size:34rpx;
+  color:#525252;
+}
+.timeBox_center view{
+  width:32rpx;
+  height:32rpx;
+  font-size:24rpx;
+  color:#e2020a;
+  text-align:center;
+  line-height:32rpx;
+  margin:0 10rpx;
+  background:#ff8481;
+}
+/*倒计时结束*/
+/*拼团内容开始*/
+.assemble .body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160rpx;
+  font-size:35rpx;
+}
+.assemble .body .bodyImg{
+  width:316rpx;
+  height:30rpx;
+}
+.assemble .body .bodyTitle{
+  color:#2a2a2a;
+  margin-top: 38rpx;
+}
+.assemble .body .bodyText{
+  color:#9b9b9b;
+  margin: 26rpx 0 40rpx 0;
+}
+.assemble .body .coupon{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  height:343rpx;
+  padding:0 24rpx;
+  box-sizing: border-box;
+}
+.assemble .body .coupon image{
+  width:164rpx;
+  height:100%;
+}
+.assemble .body .jewel{
+  position:relative;
+  width:100%;
+  height:148rpx;
+  margin-top: 104rpx;
+}
+.assemble .body .jewel image{
+  position: absolute;
+  bottom:0;
+  left:50%;
+  width:610rpx;
+  height:106rpx;
+  margin-left:-305rpx;
+}
+/*公共样式开始*/
+.assemble .body .common{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:160rpx;
+}
+.assemble .body .common image{
+  width:312rpx;
+  height:30rpx;
+  margin-top: 21rpx;
+}
+.assemble .body .common view{
+  font-size: 38rpx;
+  margin-top: 22rpx;
+  margin-bottom: 37rpx;
+}
+/*公共样式结束*/
+/*第一个主推产品开始*/
+.assemble .body .bodyContent{
+  position: relative;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+.assemble .body .bodyContent .bgImg{
+  width: 100%;
+  height: 512rpx;
+}
+.assemble .body .bodyContent .con{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 225rpx;
+  height: 100rpx;
+}
+.assemble .body .bodyContent .con .iconImg{
+  width: 62rpx;
+  height: 22rpx;
+}
+.assemble .body .bodyContent .con text{
+  font-size: 22rpx;
+  color: #f00;
+}
+.assemble .body .bodyContent .con text.price{
+  font-size: 32rpx;
+}
+.assemble .body .bodyContent .con .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 46rpx;
+  margin-left: 14rpx;
+  margin-bottom: 20rpx;
+  background: rgb(221,0,2);
+  border-radius: 10rpx;
+}
+.assemble .body .bodyContent .con .button text{
+  color: #fff;
+  font-size: 26rpx;
+}
+.assemble .body .bodyContent .con .button icon{
+  color: #fff;
+  font-size: 20rpx;
+  margin-bottom: 22rpx;
+  margin-left: 10rpx; 
+}
+/*第一个主推产品结束*/
+.assemble .body .city{
+  width: 100%;
+  height: 200rpx;
+  margin-top: -20rpx;
+}
+.assemble .body .city image{
+  width: 100%;
+  height: 100%;
+}
+/*第二个主推产品开始*/
+.assemble .body .body2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56rpx;
+}
+.assemble .body .body2 .img1{
+  width: 473rpx;
+  height: 368rpx;
+}
+.assemble .body .body2 .bodyCon2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.assemble .body .body2 .bodyCon2 .img2{
+  width: 244rpx;
+  height: 270rpx;
+}
+.assemble .body .body2 .bodyCon2 .bodyPrice{
+  color: #f00;
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
+.assemble .body .body2 .bodyCon2 .bodyPrice .price{
+  font-size: 26rpx;
+}
+.assemble .body .body2 .bodyCon2 .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 46rpx;
+  margin: 19rpx 0 20rpx 18rpx;
+  background: rgb(221,0,2);
+  border-radius: 10rpx;
+}
+.assemble .body .body2 .bodyCon2 .button text{
+  color: #fff;
+  font-size: 26rpx;
+}
+.assemble .body .body2 .bodyCon2 .button icon{
+  color: #fff;
+  font-size: 20rpx;
+  margin-bottom: 22rpx;
+  margin-left: 10rpx; 
+}
+/*第二个主推产品结束*/
+/*第三个主推开始*/
+.assemble .body .body3 .person{
+  width: 100%;
+  height: 310rpx;
+  margin-bottom: 120rpx;
+}
+.assemble .body .body3 .commodity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.assemble .body .body3 .commodity .center1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+.assemble .body .body3 .commodity .center1 .title{
+  margin-bottom: 16rpx;
+}
+.assemble .body .body3 .commodity .center1 .img3{
+  width: 342rpx;
+  height: 210rpx;
+  margin-bottom: 26rpx;
+}
+.assemble .body .body3 .commodity .center1 .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.assemble .body .body3 .commodity .center1 .bottom .iconimg{
+  width: 48rpx;
+  height: 16rpx;
+}
+.assemble .body .body3 .commodity .center1 .bottom text{
+  color: #f00;
+  font-size: 20rpx;
+}
+.assemble .body .body3 .commodity .center1 .bottom text.price{
+  font-size: 32rpx;
+}
+.assemble .body .body3 .commodity .center1 .bottom .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 46rpx;
+  margin: 19rpx 0 20rpx 18rpx;
+  background: rgb(221,0,2);
+  border-radius: 10rpx;
+}
+.assemble .body .body3 .commodity .center1 .bottom .button text{
+  color: #fff;
+  font-size: 26rpx;
+}
+.assemble .body .body3 .commodity .center1 .bottom .button icon{
+  color: #fff;
+  font-size: 20rpx;
+  margin-bottom: 22rpx;
+  margin-left: 10rpx; 
+}
+/*第三个主推结束*/
+/*第四个主推产品开始*/
+.assemble .body .body4 .commodity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30rpx;
+  margin-bottom: 88rpx;
+  box-sizing: border-box;
+}
+.assemble .body .body4 .commodity .center1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+.assemble .body .body4 .commodity .center1 .title{
+  margin-bottom: 16rpx;
+}
+.assemble .body .body4 .commodity .center1 .img3{
+  width: 342rpx;
+  height: 210rpx;
+  margin-bottom: 26rpx;
+}
+.assemble .body .body4 .commodity .center1 .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.assemble .body .body4 .commodity .center1 .bottom .iconimg{
+  width: 48rpx;
+  height: 16rpx;
+}
+.assemble .body .body4 .commodity .center1 .bottom text{
+  color: #f00;
+  font-size: 20rpx;
+}
+.assemble .body .body4 .commodity .center1 .bottom text.price{
+  font-size: 32rpx;
+}
+.assemble .body .body4 .commodity .center1 .bottom .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 46rpx;
+  margin: 19rpx 0 20rpx 18rpx;
+  background: rgb(221,0,2);
+  border-radius: 10rpx;
+}
+.assemble .body .body4 .commodity .center1 .bottom .button text{
+  color: #fff;
+  font-size: 26rpx;
+}
+.assemble .body .body4 .commodity .center1 .bottom .button icon{
+  color: #fff;
+  font-size: 20rpx;
+  margin-bottom: 22rpx;
+  margin-left: 10rpx; 
+}
+/*第四个主推产品结束*/
+.assemble .body .girl{
+  width: 100%;
+  height: 490rpx;
+}
+.assemble .body .girl image{
+  width: 100%;
+  height: 100%;
+}
+/*排行榜开始*/
+.row{
+  width: 100%;
+  height: 100%;
+  padding-top: 52rpx;
+  box-sizing: border-box;
+  background: #f4f4f4;
+}
+.row .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45rpx;
+  margin-bottom: 38rpx;
+  box-sizing: border-box;
+}
+.row .header .ranking{
+  font-size: 32rpx;
+}
+.row .header .volume text{
+  font-size: 22rpx;
+  padding-bottom: 8rpx;
+}
+.row .header .volume text.active{
+  border-bottom: 4rpx solid #000;
+}
+.row .header .volume text:nth-of-type(2){
+  margin-left: 48rpx;
+  margin-right: 45rpx;
+}
+.row .body4{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.row .body4 .center{
+  width: 231rpx;
+  height: 292rpx;
+  margin-right: 19rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.row .body4 .center:last-child{
+  margin-right: 0;
+}
+.row .body4 .center image{
+  width: 231rpx;
+  height: 150rpx;
+}
+.row .body4 .center .circle{
+  display: flex;
+  justify-content: center;
+  margin-top: -30rpx;
+  margin-bottom: 20rpx;
+}
+.row .body4 .center .circle text{
+  width: 48rpx;
+  height: 48rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  background: #0e8b4c;
+  border-radius: 50%;
+}
+.row .body4 .center .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.row .body4 .center .text text{
+  font-size: 19rpx; 
+  margin-bottom: 10rpx;
+}
+.row .body4 .center .text .person1{
+  font-size: 24rpx;
+  color: #ccc;
+}
+/*排行榜结束*/
+/*猜你喜欢开始*/
+.like{
+  width: 100%;
+  padding: 0 21rpx;
+  box-sizing: border-box;
+  background: #f1f6f4;
+}
+.like .title{
+  width: 100%;
+  font-size: 34rpx;
+  padding: 36rpx 0 60rpx 30rpx;
+  box-sizing: border-box;
+}
+.new_list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+}
+.lis{
+  width:48%;
+  margin-bottom:25rpx;
+  background:#fff;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.lis:nth-of-type(2n){
+  padding-right: 0;
+  margin-left: 4rpx;
+}
+.lis image{
+  width:100%;
+  height:287rpx;
+  margin-bottom: 32rpx;
+}
+.lis view{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.new_text1{
+  font-size:28rpx;
+  box-sizing: border-box;
+  padding: 0 89rpx 15rpx 10rpx;
+}
+.new_text_2{
+  color:#ccc;
+  font-size: 24rpx;
+  padding: 0 89rpx 31rpx 10rpx;
+  box-sizing: border-box;
+}
+.new_text_3{
+  color:red;
+  font-size: 20rpx;
+  padding-left: 15rpx;
+  padding-bottom: 33rpx;
+  box-sizing: border-box;
+}
+/*猜你喜欢结束*/
+/*拼团内容结束*/
+/*拼团样式结束*/
+/*查看更多样式开始*/
+.seeMore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 86rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 18rpx;
+}
+.seeMore text{
+  font-size: 24rpx;
+}
+/*查看更多样式结束*/
+/*加载*/
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

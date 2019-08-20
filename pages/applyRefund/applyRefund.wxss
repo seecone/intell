@@ -1,0 +1,157 @@
+/* pages/applyRefund/applyRefund.wxss */
+.applyRefund{
+  width:100%;
+  height:100vh;
+  background:#f6f6f6;
+}
+/* .applyRefund .headline{
+  position:relative;
+  margin-top:40rpx;
+  height:90rpx;
+  line-height:90rpx;
+  background:#fff;
+  text-align: center;
+}
+.applyRefund .headline .goBack{
+  position:absolute;
+  top:50%;
+  left:31rpx;
+  transform: translateY(-50%);
+}
+.applyRefund .headline text:nth-child(2){
+  display: block;
+  margin:auto;
+  text-align: center;
+  
+} */
+.applyRefund .commodity{
+  display:flex;
+  justify-content: space-between;
+  box-sizing:border-box;
+  margin-top:30rpx;
+  padding:23rpx 24rpx;
+  background:#fff;
+
+}
+.applyRefund .commodity image{
+  width:160rpx;
+  height:160rpx;
+  background:pink;
+  margin-right:37rpx;
+}
+.applyRefund .commodity .commodity-text{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  flex:1;
+  font-size:23rpx;
+  padding:25rpx 0 26rpx;
+}
+.applyRefund .commodity .commodity-text>view{
+  display:flex;
+  justify-content: space-between;
+
+}
+.applyRefund .commodity .commodity-text view.text-top text:nth-child(2){
+  color:#d53b31;
+  font-size:26rpx;
+  margin-left:27rpx;
+}
+.applyRefund .commodity .commodity-text view.text-bottom{
+  color:#c1c1c1;
+}
+.applyRefund .cause,.applyRefund .refund-price,.applyRefund .upload{
+  box-sizing:border-box;
+  background:#fff;
+  padding:30rpx 24rpx;
+  margin-top:29px;
+  font-size:26rpx;
+  color:#383838;
+}
+.applyRefund .cause{
+  display: flex;
+  justify-content: space-between;
+}
+.applyRefund .cause .chooseReason{
+  color:#cbcbcb;
+}
+.applyRefund .refund-price .hint{
+  margin-right:24rpx;
+}
+.applyRefund .refund-price .price .money{
+  color:#e47b75;
+}
+.applyRefund .refund-price .explain{
+  display:flex;
+  align-items:center;
+  margin-top:58rpx;
+}
+.applyRefund .refund-price .explain input{
+  display:inline-block;
+}
+.applyRefund .upload .imgs{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width:128rpx;
+  height:128rpx;
+  border:1px dashed #ddd;
+  font-size:20rpx;
+}
+.applyRefund .upload .imgs .photo{
+  margin-bottom:24rpx;
+}
+.applyRefund .upload .upload-hint{
+  margin-bottom:30rpx;
+}
+.applyRefund .btn{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100vw;
+  height:95rpx;
+  font-size:37rpx;
+  color:#fff;
+  text-align: center;
+  line-height:95rpx;
+  background:#dc3026;
+  border-radius: 0;
+}
+.applyRefund .cause-select{
+  box-sizing: border-box;
+  width:100vw;
+  padding:27rpx 24rpx 0;
+}
+.applyRefund .cause-select .cause-title{
+  margin-bottom:56rpx;
+  text-align: center;
+  font-size:30rpx;
+}
+.applyRefund .cause-select .mores radio-group {
+  display: flex;
+  flex-direction: column;
+  color: #383a3a;
+}
+.applyRefund .cause-select .mores radio-group label{
+  display:flex;
+  justify-content:space-between;
+  height:86rpx;
+  width:100%;
+  line-height:83rpx;
+  font-size:26rpx;
+  border-bottom:1rpx solid #bebebe;
+}
+.applyRefund .cause-select .mores radio-group label:last-child{
+  border:none;
+}
+.applyRefund .close{
+  width:100vw;
+  height:85rpx;
+  background:#dc3025;
+  margin-top:30rpx;
+  font-size:38rpx;
+  color:#fff;
+  text-align: center;
+  line-height:85rpx;
+}

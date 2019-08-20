@@ -1,0 +1,5 @@
+<!--pages/success/success.wxml-->
+<view class="success">
+  <image src="../../img/elephant.png"></image>
+  <text>评价成功！</text>
+</view>

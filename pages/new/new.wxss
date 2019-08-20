@@ -1,0 +1,98 @@
+/* pages/new/new.wxss */
+.new{
+  width: 100%;
+  height: 100%;
+}
+/* 新品上边样式开始 */
+.new .top{
+  width: 100%;
+  height: 340rpx;
+}
+.new .top image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.new .top .text{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 200rpx;
+  color: #fff;
+  text-align: center;
+}
+.new .top .text .txt1 text:nth-of-type(1){
+  font-size: 36rpx;
+}
+.new .top .text .txt1 text:nth-of-type(2){
+  font-size: 32rpx;
+  margin-left: 20rpx;
+}
+.new .top .text .txt2{
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.new .top .text .txt2 text{
+  margin-right: 23rpx;
+}
+.new .top .text .txt2 text:last-child{
+  margin-right: 0;
+}
+/* 新品上边样式结束 */
+/* 新品内容样式开始 */
+.new .content{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 24rpx 0;
+  box-sizing: border-box;
+}
+.new .content .loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.new .content .item{
+  width: 48%;
+  margin-bottom: 19rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx 2rpx #ccc;
+  overflow: hidden;
+}
+.new .content .item .icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.new .content .item image{
+  width: 100%;
+  height: 300rpx;
+}
+.new .content .item .center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 14rpx;
+}
+.new .content .item .center .title{
+  font-size: 32rpx;
+  color: #333;
+  margin-top: 55rpx;
+}
+.new .content .item .center .name{
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 17rpx;
+}
+.new .content .item .center .price{
+  font-size: 32rpx;
+  color: #df0000;
+  margin-top: 46rpx;
+  margin-bottom: 12rpx;
+}
+/* 新品内容样式结束 */

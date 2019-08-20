@@ -1,0 +1,234 @@
+/* 收货地址 */
+.address {
+  background-color: #f7f7f7;
+  width: 100vw;
+  height: 100vh;
+}
+/* 头部 */
+.header {
+  position: relative;
+  background-color: #fbfbfb;
+  width: 100%;
+  padding: 66rpx 23rpx 0 23rpx;
+  line-height: 34rpx;
+}
+.header van-icon {
+  position: absolute;
+  left: 16rpx;
+  bottom: 0;
+  font-size: 36rpx;
+}
+.header view {
+  text-align: center;
+  font-size: 34rpx;
+}
+/* 中部 */
+.body {
+  margin-bottom: 52rpx;
+}
+.body .item {
+  position: relative;
+  width: 100%;
+  height: 260rpx;
+  background: #fbfbfb;
+  padding: 62rpx 24rpx 28rpx 24rpx;
+  margin-bottom: 10rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+.body .item .cross {
+  position: absolute;
+  right: 24rpx;
+  top: 30rpx;
+  width: 22rpx;
+  height: 22rpx;
+  font-size: 22rpx;
+  color: #999;
+}
+.body .item .name {
+  height: 26rpx;
+  font-size: 26rpx;
+  line-height: 31rpx;
+  margin-bottom: 19rpx;
+}
+.body .item .tel {
+  position: relative;
+  height: 26rpx;
+  font-size: 26rpx;
+  line-height: 31rpx;
+  margin-bottom: 75rpx;
+}
+.body .item .tel .province1,
+.body .item .tel .province2,
+.body .item .tel .city,
+.body .item .tel .county,
+.body .item .tel .number {
+  margin-right: 10rpx;
+}
+.body .item .tel .use {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #dc3025;
+    font-size: 38rpx;
+}
+.body .item .tel .size {
+  font-size: 24rpx;
+  color:#666;
+  padding: 4rpx 10rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 6rpx;
+}
+.body .item  .edit {
+  display: flex;
+  align-items: center;
+}
+.body .item  .edit van-icon {
+  display: inline-block;
+  width: 42rpx;
+  height: 42rpx;
+  color: #e01616;
+}
+.body .item  .edit text {
+  font-size: 24rpx;
+  color: #e01616;
+}
+.body .item .edit .editRight {
+  flex: 1;
+}
+.body .item .edit .editRight .Topping {
+  float: right;
+  margin-left: 25rpx;
+  color: #999;
+}
+.body .item .edit .editRight .editContent {
+  float: right;
+  color: #999;
+}
+/* 底部 */
+.btn {
+  width: 100%;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+.btn .add {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 14rpx;
+  background: #e01616;
+  font-size:30rpx;
+  color: #fff;
+}
+.btn .add van-icon {
+  display: inline-block;
+  width: 33rpx;
+  height: 33rpx;
+  line-height: 33rpx;
+  text-align: center;
+  margin-right: 18rpx;
+  background: #fff;
+  color: #e01616;
+}
+.btn .add text {
+  height: 34rpx;
+  font-family: MicrosoftYaHei;
+  font-size: 34rpx;
+  font-weight: normal;
+  line-height: 36rpx;
+  letter-spacing: 0rpx;
+  color: #fffefe;
+}
+
+van-popup {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.van-popup {
+  width: 702rpx;
+}
+.van-popup .vanPopup {
+  position: relative;
+  width: 100%;
+  height: 500rpx;
+  border-radius: 10rpx;
+}
+.van-popup .vanPopup .cross {
+  position: absolute;
+  right: 23rpx;
+  top: 0;
+  color: #ccc;
+}
+.van-popup .vanPopup .addressTop {
+  width: 100%;
+  height: 34rpx;
+  text-align: center;
+  margin-top: 33rpx;
+  padding-bottom: 35rpx;
+  font-size: 34rpx;
+  color: #333;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.van-popup .vanPopup .addressBody {
+  position: relative;
+  height: 158rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.van-popup .vanPopup .addressBody .nameNumber {
+  display: flex;
+  height: 77rpx;
+  line-height: 77rpx;
+}
+.van-popup .vanPopup .addressBody .nameNumber input {
+  flex: 1;
+  text-indent: 14rpx;
+  height: 100%;
+  line-height: 77rpx;
+  border: 2rpx solid #f5f5f5;
+  font-size: 24rpx;
+}
+.van-popup .vanPopup .addressBody .nameNumber input:last-child {
+  border-left: 2rpx solid #f5f5f5; 
+}
+.van-popup .vanPopup .addressBody .title {
+
+  display: inline-block;
+  width: 100%;
+  height: 77rpx;
+  line-height: 77rpx;
+  text-indent: 15rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.van-popup .vanPopup .addressBody .titleRight {
+  position: absolute;
+  right: 23rpx;
+  bottom: 10rpx;
+
+  color: #ccc;
+}
+.van-popup .vanPopup .addressBody .vanArea {
+  width: 100%;
+}
+.van-popup .vanPopup .addressBody .input {
+  width: 100%;
+}
+.van-popup .vanPopup .addressBody .input input {
+  text-indent: 14rpx;
+  font-size: 24rpx;
+}
+.van-popup .vanPopup .addressBottom {
+  position: absolute;
+  bottom: 20rpx;
+  left: 0;
+  width: 100%;
+  padding: 0 34rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+.van-popup .vanPopup .addressBottom button {
+  padding: 0;
+  background: #ccc;
+  color: #fff;
+}

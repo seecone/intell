@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/new/new",
+    "pages/shop/shop",
+    "pages/mine/mine",
+    "pages/indent/indent",
+    "pages/offer/offer",
+    "pages/browsing/browsing",
+    "pages/collection/collection",
+    "pages/refund/refund",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/applyRefund/applyRefund",
+    "pages/After/After",
+    "pages/Publish/Publish",
+    "pages/Reviewed/Reviewed",
+    "pages/success/success",
+    "pages/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智能家居生态馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./image/home.jpg",
+        "selectedIconPath": "./image/home-active.jpg"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "新品",
+        "iconPath": "./image/new.jpg",
+        "selectedIconPath": "./image/new-active.jpg"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "购物车",
+        "iconPath": "./image/cart.jpg",
+        "selectedIconPath": "./image/cart-active.jpg"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./image/mine.jpg",
+        "selectedIconPath": "./image/mine-active.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-icon": "miniprogram_npm/vant-weapp/icon/index",
+    "van-dialog": "miniprogram_npm/vant-weapp/dialog/index",
+    "van-loading": "miniprogram_npm/vant-weapp/loading/index"
+  }
+}

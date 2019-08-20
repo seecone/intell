@@ -1,0 +1,68 @@
+<!--pages/applyRefund/applyRefund.wxml-->
+<!-- 申请退款 -->
+<view class='applyRefund'>
+  <!-- <view class='headline'>
+    <text class='goBack' bindtap='goBack'>返回</text>
+    <text>申请退款</text>
+  </view> -->
+ 
+  <!-- 物品  -->
+  <view class='commodity'>
+    <image src='' alt='...'></image>
+    <view class='commodity-text'>
+      <view class='text-top'>
+        <text>POKALEN乳胶枕头泰国原装进口颈椎天然橡胶</text>
+        <text>￥299.0</text>
+      </view>
+      <view class='text-bottom'>
+        <text>天然乳胶</text>
+        <text>x1</text>
+      </view>
+    </view>
+  </view>
+   <!-- 退款原因 -->
+  <view class='cause'>
+    <text>退款原因</text>
+    <text class='chooseReason' bindtap='choose'>请选择 ></text>
+  </view>
+  <!-- 退款价格  -->
+  <view class='refund-price'>
+    <view class='price'>
+      <text class='hint'>退款金额:</text>
+      <text class='money'>￥299.0</text>
+    </view>
+    <view class='explain'>
+      <text class='hint'>退款说明:</text>
+      <input type='text' placeholder="选填"/>
+    </view>
+  </view>
+  <!--上传凭证  -->
+  <view class='upload'>
+    <view class='upload-hint'>上传凭证:</view>
+    <view class='imgs'>
+      <text class='photo'>相机</text>
+      <text class='add-photo'>添加图片</text>
+    </view>
+  </view>
+  <!--提交申请  -->
+  <button class='btn'>提交申请</button>
+   <van-popup
+    show="{{show}}"
+    position="bottom"
+    overlay="{{ true }}"
+  >
+   <view class='cause-select'>
+    <view class='cause-title'>退款原因</view>
+    <view class='mores'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{causeMore}}" wx:key="{{key}}">
+          <span>{{item.value}}</span>
+          <radio value="{{item.name}}" checked="{{item.isChecked}}"/>
+        </label>
+      </radio-group>
+    </view>
+   </view>
+   <view class='close' bindtap='onClose'>关闭</view>
+  </van-popup>
+</view>
+

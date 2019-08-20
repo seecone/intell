@@ -1,0 +1,125 @@
+/* pages/Publish/Publish.wxss */
+.publish{
+  height: 100vh;
+  background: #f2f2f2;
+}
+/* 评价开始 */
+.publish_title{
+  display: flex;
+  padding: 20rpx 0 20rpx 24rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-bottom:2rpx solid #f2f2f2; 
+} 
+.publish_title image{
+  width: 84rpx;
+  height: 89rpx;
+  margin-right: 15rpx;
+  box-sizing: border-box;
+  background: #f00;
+}
+.publish_title .content1{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+.publish_title .content1 .text1{
+  color: #333;
+  padding-right: 22rpx;
+  box-sizing: border-box;
+}
+.publish_title .content1 .text2{
+  color: #999;
+  padding-left: 77rpx;
+  box-sizing: border-box;
+}
+/* 评价结束 */
+/* 评价内容开始 */
+.eva-content{
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+.eva-content .content_top{
+  font-size: 24rpx;
+  color: #999;
+  height: 380rpx;
+  padding: 24rpx 73rpx 45rpx 24rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.eva-content .content_top textarea{
+  height: 60%;
+}
+.eva-content .content_top .add{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 128rpx;
+  height: 128rpx;
+  border: 2rpx dashed #ccc;
+}
+.eva-content .content_top .add van-icon{
+  font-size: 50rpx; 
+}
+.eva-content .content_top .add text{
+  font-size: 20rpx;
+}
+.eva-content .content_bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88rpx;
+  color: #999;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+.eva-content .content_bottom view{
+  font-size: 26rpx;
+}
+.eva-content .content_bottom van-checkbox{
+  display: inline-block;
+  padding-right: 24rpx;
+}
+.eva-content .content_bottom text{
+  font-size: 24rpx;
+}
+/* 评价内容结束 */
+/* 态度开始 */
+.attitude{
+  height: 180rpx;
+  padding: 47rpx 0 47rpx 24rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.attitude:first-child{
+  padding-bottom: 47rpx;
+  box-sizing: border-box;
+}
+.attitude .con1{
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+.attitude .con1 .text1{
+  color: #333;
+  padding-right: 22rpx;
+  box-sizing: border-box;
+}
+.attitude .con1 .text2{
+  color: #999;
+  padding-left: 77rpx;
+  box-sizing: border-box;
+}
+/* 态度结束 */
+/* 发表评论按钮 */
+.btn{
+  padding: 50rpx 24rpx 0;
+  box-sizing: border-box;
+}
+.van-button--danger{
+  font-size: 34rpx;
+  color: #fff;
+  border-radius: 28rpx;
+}

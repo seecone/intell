@@ -1,0 +1,82 @@
+<!-- 收货地址 -->
+<view class='address'>
+  <!-- 头部开始 -->
+  <view class="header">
+    <van-icon name="arrow-left" />
+    <view>收货地址</view>
+  </view>
+  <!-- 头部结束 -->
+
+  <!-- 中部开始 -->
+  <view class='body'>
+    <view class='item'wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
+      <van-icon name="cross" class='cross' bindtap="remove" data-index="{{index}}"/>
+      <view class='name'>
+        <text>{{item.name}}</text>，
+        <text>{{item.tel}}</text>
+      </view>
+      <view class='tel'>
+        <text class='province1'>{{item.province1}}</text>
+        <text class='province2'>{{item.province2}}</text>
+        <text class='city'>{{item.city}}</text>
+        <text class='county'>{{item.county}}</text>
+        <text class='number'>{{item.number}}</text>
+        <van-icon name="success" wx:if="{{item.check}}" class='use'data-index="{{index}}" bindtap="defaults" />
+        <text wx:if="{{!item.check}}" class='use size'data-index="{{index}}" bindtap="defaults" >使用</text>
+      </view>
+      <view class='edit'>
+        <van-icon name="checked" data-index="{{index}}" bindtap="defaults" wx:if="{{item.check}}" class='checked' />
+        <van-icon name="circle" data-index="{{index}}" bindtap="defaults" wx:if="{{!item.check}}" class='checked'/>
+        <!-- circle -->
+        <text wx:if="{{item.check}}" data-index="{{index}}" bindtap="defaults">已设为默认</text>
+        <text wx:if="{{!item.check}}" data-index="{{index}}"  bindtap="defaults">设为默认</text>
+        <view class='editRight'>
+          <text class='Topping' bindtap="Topping" data-index="{{index}}" wx:if="{{item.Topping}}">取消置顶</text>
+          <text class='Topping' bindtap="Topping" data-index="{{index}}" wx:if="{{!item.Topping}}">置顶</text>
+          <text class='editContent' bindtap="editContent" data-index="{{index}}">编辑</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 中部结束 -->
+
+  <!-- 尾部开始 -->
+  <view class="btn">
+    <button class='add' bindtap="add">
+      <van-icon name="plus" />
+      <text>添加新收货地址</text>
+    </button>
+  </view>
+  <!-- 尾部结束 -->
+  <!-- 模态框开始 -->
+  <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
+  <van-popup show="{{ show }}" overlay="{{ false }}">
+    <view class="vanPopup"> 
+      <view class='addressTop'>添加新收货地址</view>
+      <van-icon name="cross" class='cross' bindtap="onClose"/>
+      <view class='addressBody'>
+        <view class='nameNumber'>
+          <input type='text' placeholder='收货姓名' value="{{name}}" bindinput='getName'></input>
+          <input type='text' placeholder='电话' value="{{tel}}" bindinput='getTel'></input>
+        </view>
+        <view>
+          <view bindtap="auto">
+            <text class="title">{{province1}} {{province2}} {{city}}</text> 
+            <van-icon name="arrow" class='titleRight'/>
+          </view>
+          <view class='input'>
+            <input type='text' placeholder='详细地址（如街道、小区、乡镇、村）' value="{{county}}" bindinput="getCounty"></input>
+          </view>
+        </view>
+      </view>
+      <view class='addressBottom'>
+        <button type='button' bindtap="save">保存</button>
+      </view>
+    </view>
+  </van-popup>
+  <!-- 模态框结束 -->
+  <van-popup show="{{ shows }}" position="bottom" overlay="{{ false }}">
+    <van-area class="vanArea" item-height="50" area-list="{{ areaList }}" bindcancel="cancel"  columns-num="3" bindconfirm="confirm"/>
+  </van-popup>
+  <van-dialog id="van-dialog" bindtap="confirm" bindtap="cancel"/>
+</view>

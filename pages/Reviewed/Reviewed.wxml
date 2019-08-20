@@ -1,0 +1,35 @@
+<!--pages/Reviewed/Reviewed.wxml-->
+<view class="reviewed">
+  <!-- 已评价 -->
+  <view class="review">
+    <van-icon name="checked" class="check"/>
+    <text class="text1">已评价</text>
+    <text class="text2">感谢您的评价</text>
+  </view>
+  <!-- 已评价 -->
+  <!-- 更多 -->
+  <view class="more">
+    <text>留下更多反馈，帮助我们提供更好服务</text>
+    <van-icon name="arrow" class="arrow"/>
+  </view>
+  <!-- 更多 -->
+  <!-- 记录 -->
+  <view class="record">
+    <view class="record_content">
+      <text>评价记录</text>
+      <view class="record_con">
+        <text>服务评价</text>
+        <van-rate
+          value="{{ value }}"
+          size="{{ 25 }}"
+          color="#dc3025"
+          void-color="#eee"
+          void-icon="star"
+          bind:change="onChange"
+        />
+        <text>好</text>
+      </view>
+    </view>
+  </view>
+  <!-- 记录 -->
+</view>

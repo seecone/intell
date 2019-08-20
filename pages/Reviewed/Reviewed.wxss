@@ -1,0 +1,77 @@
+/* pages/Reviewed/Reviewed.wxss */
+.reviewed{
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+}
+/* 已评价 */
+.review{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:315rpx;
+  font-size: 26rpx;
+  background: #fff;
+}
+.check{
+  font-size: 68rpx;
+  color: #5fdb55;
+}
+.text1{
+  color: #333;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.text2{
+  color: #999;
+  padding-top: 18rpx;
+  box-sizing: border-box;
+}
+/* 已评价 */
+/* 更多 */
+.more{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120rpx;
+  font-size: 26rpx;
+  padding: 0 47rpx 0 24rpx;
+  margin: 20rpx 0;
+  background: #fff;
+  box-sizing: border-box;
+}
+.more text{
+  color: #333;
+}
+.more .arrow{
+  color: #b7b7b7;
+}
+/* 更多 */
+/* 记录 */
+.record{
+  height: 172rpx;
+  padding: 10rpx 24rpx 0;
+  background: #fff;
+  box-sizing: border-box;
+}
+.record .record_content{
+  height: 126rpx;
+  padding-bottom: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.record .record_content text{
+  color: #999;
+  font-size: 22rpx;
+}
+.record_content .record_con{
+  display: flex;
+  align-items: center;
+}
+.van-rate{
+  padding-left: 68rpx;
+  padding-right: 75rpx;
+  box-sizing: border-box;
+}
+/* 记录 */
